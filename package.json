@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-thinking-router",
+  "version": "0.3.0",
+  "description": "Automatic GPT-5.6 model and reasoning routing for OpenClaw agents.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Lebmont8",
+  "repository": { "type": "git", "url": "git+https://github.com/Lebmont8/openclaw-thinking-router.git" },
+  "files": ["*.js", "openclaw.plugin.json", "README.md", "SECURITY.md", "LICENSE"],
+  "scripts": {
+    "check": "node --check index.js && node --check audit.js && node --check classifier.js && node --check policy.js && node --check session-route.js && node --check state.js",
+    "test": "node --test index.test.js",
+    "verify": "npm run check && npm test"
+  },
+  "peerDependencies": { "openclaw": ">=2026.7.1" },
+  "openclaw": { "extensions": ["./index.js"] }
+}
