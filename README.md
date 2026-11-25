@@ -1,8 +1,9 @@
 # OpenClaw Thinking Router
 
-An OpenClaw plugin that selects GPT-5.6 reasoning effort from task complexity,
-supports per-session manual routes, inherits the route for approvals and
-follow-ups, and returns automatic sessions to their base policy after a run.
+Keep routine work on the configured GPT-5.6 route and raise reasoning effort
+when a task meets the routing rules. You can override the route for one session.
+Approvals and follow-ups reuse the current choice, and automatic routes return
+to the base policy after a run.
 
 ## Features
 
